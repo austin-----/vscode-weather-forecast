@@ -1,5 +1,5 @@
 {
-	"name": "vscode-weather-forecase",
+	"name": "vscode-weather-forecast",
 	"displayName": "Weather Forecast",
 	"description": "ASCII Weather forecast for VSCode",
 	"version": "0.0.1",
