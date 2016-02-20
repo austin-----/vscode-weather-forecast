@@ -55,11 +55,13 @@ export function activate(context: vscode.ExtensionContext) {
             prompt: 'Input City Name (empty if for current location)',
             placeHolder: 'E.g.: "Seattle,WA", "Paris", "Tokyo,Japan"'
         }).then((city) => {
-            vscode.workspace.openTextDocument(vscode.Uri.parse('weather://weather/' + city)).then((document) => {    
-                vscode.window.showTextDocument(document); 
-            }, (error) => {
-                vscode.window.showErrorMessage(error);
-            });
+            if (city != undefined) {
+                vscode.workspace.openTextDocument(vscode.Uri.parse('weather://weather/' + city)).then((document) => {    
+                    vscode.window.showTextDocument(document); 
+                }, (error) => {
+                    vscode.window.showErrorMessage(error);
+                });
+            }
         });
     });
 
