@@ -5,7 +5,7 @@ import * as vscode from 'vscode';
 import * as http from 'http';
 
 export function stripColorCode(content: string) : string {
-    var regex = /\[[0-9;]+m/g;
+    var regex = /\033\[[0-9;]*m/g;
     //return content;
     return content.replace(regex, '').replace('\ufffd\ufffd\ufffd', '─');
 }

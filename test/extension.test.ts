@@ -21,4 +21,11 @@ suite("Extension Tests", () => {
         var actual = myExtension.stripColorCode(rawText);
         assert.equal(actual, expected);
 	});
+    test("Test Strip Code 2", () => {
+        var rawText = '[38;5;240;1m';
+        var expected = '';
+        var actual = myExtension.stripColorCode(rawText);
+        assert.equal(actual, expected);
+	});
+    
 });

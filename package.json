@@ -2,7 +2,7 @@
 	"name": "vscode-weather-forecast",
 	"displayName": "Weather Forecast",
 	"description": "ASCII Weather forecast for VSCode",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "austin",
 	"engines": {
 		"vscode": "^0.10.8"
@@ -28,5 +28,9 @@
 	"devDependencies": {
 		"typescript": "^1.7.5",
 		"vscode": "^0.11.0"
-	}
+	},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/austin-----/vscode-weather-forecast"
+    }
 }
